@@ -12,7 +12,6 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,8 +26,8 @@ import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 
-public class MainActivity extends Activity {
-    final private static String TAG = "MainActivity";
+public class FaceDetectActivity extends Activity {
+    final private static String TAG = FaceppDetect.class.getSimpleName();
     final private int PICTURE_CHOOSE = 1;
 
     private ImageView imageView = null;
@@ -112,7 +111,7 @@ public class MainActivity extends Activity {
                             //save new image
                             img = bitmap;
 
-                            MainActivity.this.runOnUiThread(new Runnable() {
+                            FaceDetectActivity.this.runOnUiThread(new Runnable() {
 
                                 public void run() {
                                     //show the image
@@ -123,7 +122,7 @@ public class MainActivity extends Activity {
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                            MainActivity.this.runOnUiThread(new Runnable() {
+                            FaceDetectActivity.this.runOnUiThread(new Runnable() {
                                 public void run() {
                                     textView.setText("Error.");
                                 }
@@ -211,7 +210,7 @@ public class MainActivity extends Activity {
                         }
                     } catch (FaceppParseException e) {
                         e.printStackTrace();
-                        MainActivity.this.runOnUiThread(new Runnable() {
+                        FaceDetectActivity.this.runOnUiThread(new Runnable() {
                             public void run() {
                                 textView.setText("Network error.");
                             }

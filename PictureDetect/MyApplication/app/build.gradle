@@ -26,5 +26,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.0'
     testCompile 'junit:junit:4.12'
-    compile files('libs/faceppsdk_min.jar')
+    compile files('libs/faceppsdk.jar')
+    compile files('libs/faceppofflinesdk.jar')
 }
