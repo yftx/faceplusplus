@@ -15,6 +15,7 @@ public class LaunchActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_launch);
         findViewById(R.id.picture_detect).setOnClickListener(this);
         findViewById(R.id.local_detect).setOnClickListener(this);
+        findViewById(R.id.api_test).setOnClickListener(this);
     }
 
     @Override
@@ -26,6 +27,8 @@ public class LaunchActivity extends Activity implements View.OnClickListener {
             case R.id.local_detect:
                 open(LocalDetectActivity.class);
                 break;
+            case R.id.api_test:
+                open(ApiTestActivity.class);
         }
 
     }

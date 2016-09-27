@@ -1,0 +1,22 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- These settings headers are only used on tablets. -->
+    <header
+        android:fragment="yftx.com.github.sensetime.ui.SettingsActivity$SetOuputTypePreferenceFragment"
+        android:title="@string/set_output_type" />
+    <header
+        android:fragment="yftx.com.github.sensetime.ui.SettingsActivity$SetComplexityPreferenceFragment"
+        android:title="@string/set_complexity" />
+    <header
+        android:fragment="yftx.com.github.sensetime.ui.SettingsActivity$SetNoticePreferenceFragment"
+        android:title="@string/sound_notice" />
+    <header android:title="@string/set_detect_list" >
+        <intent
+            android:targetClass="yftx.com.github.sensetime.ui.SetDetectListActivity"
+            android:targetPackage="yftx.com.github.sensetime" >
+            <extra
+                android:name="DETECT_LIST"
+                android:value="BLINK MOUTH NOD YAW" />
+        </intent>
+    </header>
+</preference-headers>

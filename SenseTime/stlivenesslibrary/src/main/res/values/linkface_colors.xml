@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="darkGray">#757575</color><!--暗灰色#A9A9A9 -->
+    <color name="darkgray">#DCDCDC</color>
+    <color name="lightgray">#f2f2f2</color>
+    <color name="lightGreen">#00c7b7</color>
+    <color name="lightYellow">#FF8C00</color>
+    <color name="orange">#f37810</color>
+    <color name="orange2">#f78c0f</color>
+    <color name="title_bar_background">#012742</color>
+    <color name="alertdialog_line">#398AF3</color>
+    <color name="actionsheet_blue">#037BFF</color>
+
+    <color name="lightGray">#c8c8c8</color>
+    <color name="text_color">#007aff</color>
+    <color name="gray_background">#66000000</color>
+    <color name="gray_timer">#55000000</color>
+</resources>

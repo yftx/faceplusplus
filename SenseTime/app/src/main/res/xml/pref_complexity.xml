@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="@string/default_complexity_value"
+        android:entries="@array/pref_complexity_titles"
+        android:entryValues="@array/pref_complexity_values"
+        android:key="comlexity"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_complexity" />
+
+</PreferenceScreen>

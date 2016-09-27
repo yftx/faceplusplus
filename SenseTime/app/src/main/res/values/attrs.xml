@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义CustomImageView的属性 -->
+    <declare-styleable name="CustomImageView">
+        <attr name="press_alpha" format="integer" />
+        <attr name="press_color" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shape_type" format="enum">
+            <enum name="round" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 自定义CustomButton -->
+    <declare-styleable name="CustomButton">
+        <attr name="press_alpha1" format="integer" />
+        <attr name="press_color1" format="color" />
+        <attr name="border_width1" format="dimension" />
+        <attr name="border_color1" format="color" />
+        <attr name="shadow_color1" format="color" />
+    </declare-styleable>
+
+</resources>

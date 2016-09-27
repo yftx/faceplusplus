@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">活体UI</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="blink">BLINK</string>
+    <string name="nod">NOD</string>
+    <string name="mouth">MOUTH</string>
+    <string name="yaw">YAW</string>
+    <string name="sound_notice">提示声音</string>
+    <string name="set_detect_list">动作序列</string>
+    <string name="set_output_type">选图方案</string>
+    <string name="set_complexity">难易程度</string>
+    <string name="default_detect_list">BLINK MOUTH NOD YAW</string>
+    <string name="start_detect">开始检测</string>
+    <string name="done">完成</string>
+    <string name="liveness_detect">活体测试</string>
+    <string name="zhang">张</string>
+    <string name="max_action">最多可设置10个动作</string>
+    <string name="settings">设置</string>
+    <string name="pref_title_complexity">难易程度</string>
+	<string name="pass_liveness">通过活体检测</string>
+    <string name="cancel_liveness">活体检测被取消</string>
+    <string name="failed_init_sdk">算法SDK初始化失败:可能是模型路径错误,SDK权限过期,包名绑定错误,没有相机权限</string>
+	<string name="camera_refuse"> Camera 权限被拒绝, 不能启动活体检测.</string>
+    <string name="first_action">第一个动作必须为BLINK</string>
+    
+    
+    <string-array name="pref_complexity_titles">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Hell</item>
+    </string-array>
+    <string-array name="pref_complexity_values">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Hell</item>
+    </string-array>
+
+    <string name="pref_title_outputtype">选图方案</string>
+
+    <string-array name="pref_outputtype_titles">
+        <item>单图</item>
+        <item>多图</item>
+    </string-array>
+    <string-array name="pref_outputtype_values">
+        <item>singleImg</item>
+        <item>multiImg</item>
+    </string-array>
+
+    <string name="default_complexity_value">Normal</string>
+    <string name="default_outputtype_value">multiImg</string>
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">   
+    <integer name="animation_action_time">500</integer>   
+    <integer name="linkface_max_time">10</integer>     
+</resources>

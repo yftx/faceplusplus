@@ -1,0 +1,36 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noticeView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/linkface_main_bg">
+            
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="fill_parent"
+        	    android:orientation="vertical"
+        	    android:layout_weight="1"
+        	    android:layout_gravity="center_horizontal">
+        	    
+        	    <ImageView
+                android:id="@+id/image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/linkface_round_shape"
+                android:src="@drawable/linkface_nod1"
+                android:layout_gravity="center_horizontal" />
+        	    
+        	     <TextView
+        	        android:text="请张嘴"
+        	        android:id="@+id/noteText1"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+        	        android:textSize="@dimen/notice_size"
+        	        android:layout_gravity="center_horizontal" >
+        	    </TextView>
+        	            	    
+        	</LinearLayout>    
+            
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sensetime_app_name">活体检测示例</string>
+    <string name="result_note"> 比对结果 \n(请先完成前两步)</string>
+    <string name="start_note">请在光线明亮的环境中进行\n请取下会遮挡面部的物件，包括眼镜\n请保持在屏幕中央，避免转头或移出屏幕</string>
+	<string name="start_button">开始</string>
+	<string name="note_01">请将脸置于正中并在光线充足的情况下进行检测</string>
+	<string name="note_done_detect">已完成,请稍后...</string>
+	<string name="note_wink">请眨眼</string>
+	<string name="note_mouth">请张嘴</string>
+	<string name="note_nod">请点头</string>
+	<string name="note_shakehead">请摇头</string>
+	<string name="time_out_dialog_msg">请在规定时间内完成指定动作,重试一次</string>
+	<string name="track_missed_dialog_msg">动作幅度过大,请保持人脸在屏幕中央,重试一次</string>
+	<string name="time_out_dialog_title">检测超时</string>
+	<string name="track_missed_dialog_title">检测失败</string>
+	<string name="note_cancel">活体检测被取消, 请稍后...</string>
+	<string name="cancel">取消</string>
+	<string name="restart_preview">确定</string>
+	<string name="liveface">liveface</string>
+	<string name="singleImg">singleImg</string>
+	<string name="multiImg">multiImg</string>
+	<string name="blink">BLINK</string>
+	<string name="mouth">MOUTH</string>
+	<string name="nod">NOD</string>
+	<string name="yaw">YAW</string>
+	<string name="liveDetect">活体检测</string>
+	<string name="linkface_failure_dialog_title">采集失败, 再试一次吧</string>
+	<string name="failed_liveness_title">检测失败</string>
+    <string name="keep_on_the_stage">请保持程序在前台运行，重试一次</string>
+	<string name="result_cancel">活体检测被取消!</string>
+	<string name="write_external_storage_refuse">WRITE_EXTERNAL_STORAGE 权限被拒绝, 不能启动活体检测,请您在权限管理中进行授权.</string>
+</resources>

@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FaceDetectActivity">
-
         </activity>
         <activity android:name=".LaunchActivity">
             <intent-filter>
@@ -22,6 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".localdetect.LocalDetectActivity">
+        </activity>
+        <activity android:name=".ApiTestActivity">
         </activity>
     </application>
 

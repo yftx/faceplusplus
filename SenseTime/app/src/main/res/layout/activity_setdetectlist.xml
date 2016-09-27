@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:id="@+id/btnlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/blinkBtn"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/blink"
+            android:textColor="@color/background_color" />
+
+        <Button
+            android:id="@+id/nodBtn"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nod"
+            android:textColor="@color/background_color" />
+
+        <Button
+            android:id="@+id/mouthBtn"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mouth"
+            android:textColor="@color/background_color" />
+
+        <Button
+            android:id="@+id/yawBtn"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yaw"
+            android:textColor="@color/background_color" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_show"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="0.9" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp" >
+        
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button_with_background_color"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+        
+    </LinearLayout>
+
+</LinearLayout>

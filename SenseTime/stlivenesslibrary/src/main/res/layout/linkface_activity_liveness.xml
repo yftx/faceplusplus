@@ -1,0 +1,124 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.LivenessActivity" >
+
+    <com.sensetime.stlivenesslibrary.ui.FixedAspectRatioFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+
+        <fragment
+            android:id="@+id/overlapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.sensetime.stlivenesslibrary.ui.FaceOverlapFragment" />
+    </com.sensetime.stlivenesslibrary.ui.FixedAspectRatioFrameLayout>
+
+    <ImageView
+        android:id="@+id/image_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/linkface_mask_background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+
+        <ImageButton
+            android:id="@+id/linkface_return_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linkface_icon_return" />
+
+        <ImageButton
+            android:id="@+id/linkface_sound_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linkface_icon_voice" />
+
+        <RelativeLayout
+            android:id="@+id/anim_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/action_group"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_above="@+id/viewGroup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp" >
+            </android.support.v4.view.ViewPager>
+
+            <com.sensetime.stlivenesslibrary.view.CircleTimeView
+                android:id="@+id/time_view"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignTop="@+id/action_group"
+                 android:layout_above="@+id/viewGroup"
+                app:circle_color="@color/gray_timer"
+                app:circle_width="4"
+                app:max_time="@integer/linkface_max_time"
+                app:text_color="#ffffff"
+                app:text_redus="100"
+                app:text_size="30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/start_frame"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_gravity="bottom"
+        android:background="#00000000"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/start_button"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="9dp"
+            android:text="@string/start_note"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/linkface_round_button"
+            android:text="@string/start_button"
+            android:textColor="@color/text_color"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</merge>

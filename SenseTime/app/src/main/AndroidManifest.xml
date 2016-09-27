@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="yftx.com.github.sensetime"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/liveness_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="yftx.com.github.sensetime.ui.SetDetectListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="ui.ShowImageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="yftx.com.github.sensetime.ui.ShowImageActivity"/>
+        <activity
+            android:name="com.sensetime.stlivenesslibrary.ui.LivenessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="yftx.com.github.sensetime.ui.SettingsActivity">
+        </activity>
+        <activity android:name="ui.AppCompatPreferenceActivity"/>
+        <!-- <activity
+             android:name="com.sensetime.liveness.ui.MyPreferenceActivity"
+             android:label="Preferences" >
+         </activity>
+         <activity android:name="com.sensetime.liveness.ui.MyPreferencesActivity" />-->
+    </application>
+
+</manifest>
